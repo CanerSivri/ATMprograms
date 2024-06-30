@@ -6,6 +6,7 @@ int main(){
     float moneywithdraw;
     int option=-1;
     while(option != 0){
+        printf("Welcome to the ATM\n");
         printf("1- View current balance\n");
         printf("2- Deposit money\n");
         printf("3- Withdraw money\n");
@@ -28,7 +29,7 @@ int main(){
         printf("Enter the amount you want to withdraw: \n");
         scanf("%f",&moneywithdraw);
         if(moneywithdraw>balance){
-            printf("Your transaction could not be completed because you wanted to withdraw more money than your account balance..\n");
+            printf("Your transaction could not be completed because you wanted to withdraw more money than your account balance.\n");
         }
         else{
             balance -=moneywithdraw;
